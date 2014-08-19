@@ -17,6 +17,22 @@ https://github.com/NXMIX/nextday-public-api/wiki
 1. [样例](https://github.com/NXMIX/nextday-public-api/wiki/样例)
 1. [产品支持](https://github.com/NXMIX/nextday-public-api/wiki/issues)
 
+## 测试
+
+如果你已经获得了 `Partner Name` 和 `Partner Secret`，那么可以执行 `./test.sh` 或者 `./testMac.sh` 进行测试：
+
+`./test.sh yourName yourSecret`
+
+或者:
+
+`./testMac.sh yourName yourSecret`
+
+返回结果为当天的 NextDay 日历数据。
+
+** 有两个测试程序的原因是 MacOS 和 Linux 系统缺省安装的 `md5` 程序是不同的。MacOS 是 `md5`，而 Linux 是 `md5sum` **
+
+** **
+
 ## License
 
 [MIT](./LICENSE)

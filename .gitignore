@@ -1,0 +1,7 @@
+node_modules/
+.git
+.DS_Store
+.DS_Store?
+*.sublime-workspace
+*.sublime-project
+npm-debug.log
