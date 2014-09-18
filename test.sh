@@ -1,6 +1,6 @@
 #!/bin/sh
 if [ -n "$1" ] && [ -n "$2" ]; then
-    endpoint='http://test.nextday.im/api/calendar'
+    endpoint='http://api.nextday.im/api/calendar'
     url='/api/calendar'
     name=$1
     secret=$2
