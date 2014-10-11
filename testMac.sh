@@ -1,7 +1,7 @@
 #!/bin/sh
 if [ -n "$1" ] && [ -n "$2" ]; then
-    endpoint='http://api.nextday.im/api/calendar'
-    url='/api/calendar'
+    endpoint='http://api.nextday.im/api/calendar?from=20141001&to=20141003'
+    url='/api/calendar?from=20141001&to=20141003'
     name=$1
     secret=$2
     date=$(date +'%Y-%m-%d %H:%M:%S')
