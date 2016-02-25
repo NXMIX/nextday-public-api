@@ -1,6 +1,12 @@
 nextday-public-api
 ==================
 
+## 授权
+
+如果你致力于开发开源且免费的应用，那么你可以自由使用使用 NextDay 的 API，但是仍然需要申请 `Partner Secret`，申请方法在 https://github.com/NXMIX/nextday-public-api/wiki/如何申请。
+
+如果你将 NextDay 的数据和图片用于闭源或者商业应用，那么请直接发邮件联系 support@nxmix.com , 商谈商业合作事宜。
+
 ## 详细文档请参见：
 
 https://github.com/NXMIX/nextday-public-api/wiki
