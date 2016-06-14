@@ -25,7 +25,26 @@ https://github.com/NXMIX/nextday-public-api/wiki
 
 ## 测试
 
-如果你已经获得了 `Partner Name` 和 `Partner Secret`，那么可以执行 `./test.sh` 或者 `./testMac.sh` 进行测试：
+### 使用通用的 `Partner Name` 和 `Partner Secret`
+
+Nextday 为了大家测试方便，也提供了一个专门用于测试的 `Partner Name` 和 `Partner Secret` :
+
+* Partner Name: testPartner1
+* Partner Secret: 479C1956-80F9-4E57-B389-7356C2D1E68D
+
+For Linux:
+
+`./test.sh testPartner1 479C1956-80F9-4E57-B389-7356C2D1E68D`
+
+或则你用的是 MacOS:
+
+`./testMac.sh testPartner1 479C1956-80F9-4E57-B389-7356C2D1E68D`
+
+** 有两个测试程序的原因是 MacOS 和 Linux 系统缺省安装的 `md5` 程序是不同的。MacOS 是 `md5`，而 Linux 是 `md5sum` **
+
+通过这个 `Partner Name` 返回的数据，一定不会超过“今天”之前七天。假设今天是 `2016-06-14`，那么返回的“最后”一天的数据一定不会超过 `2016-06-08`。
+
+### 使用你申请的 `Partner Name` 和 `Partner Secret`
 
 `./test.sh yourName yourSecret`
 
@@ -33,11 +52,7 @@ https://github.com/NXMIX/nextday-public-api/wiki
 
 `./testMac.sh yourName yourSecret`
 
-返回结果为当天的 NextDay 日历数据。
-
-** 有两个测试程序的原因是 MacOS 和 Linux 系统缺省安装的 `md5` 程序是不同的。MacOS 是 `md5`，而 Linux 是 `md5sum` **
-
-** **
+通过你申请到的 `Partner Name` 和 `Partner Secret` 返回的数据没有时间限制（仍然是“今天”（包含“今天”）之前的数据）。
 
 ## License
 
