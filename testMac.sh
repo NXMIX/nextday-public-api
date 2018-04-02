@@ -3,7 +3,8 @@
 if [ -n "$1" ] && [ -n "$2" ]; then
     # pathAndQuery="/api/calendar?from=20141001&to=20141003"
     pathAndQuery="/api/calendar?from=20161230&to=20161230"
-    endpoint="http://api.nextday.im$pathAndQuery"
+    # Worked for both http and https
+    endpoint="https://api.nextday.im$pathAndQuery"
     name=$1
     secret=$2
     date=$(date +'%Y-%m-%d %H:%M:%S')
