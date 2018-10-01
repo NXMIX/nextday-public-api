@@ -5,6 +5,7 @@ if [ -n "$1" ] && [ -n "$2" ]; then
     endpoint="https://api.nextday.im$pathAndQuery"
     name=$1
     secret=$2
+    TZ='Asia/Shanghai'
     date=$(date +'%Y-%m-%d %H:%M:%S')
     echo -n "$pathAndQuery&$name&$date&$secret" | md5sum | cut -d" " -f1 | { read hash; curl -H "X-ND-Date: $date" -H "Authorization: $name:$hash" $endpoint; }
 else
