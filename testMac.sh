@@ -7,6 +7,7 @@ if [ -n "$1" ] && [ -n "$2" ]; then
     endpoint="https://api.nextday.im$pathAndQuery"
     name=$1
     secret=$2
+    TZ='Asia/Shanghai'
     date=$(date +'%Y-%m-%d %H:%M:%S')
     hash=$(md5 -q -s "$pathAndQuery&$name&$date&$secret")
     curl --tlsv1.2 -H "X-ND-Date: $date" -H "Authorization: $name:$hash" $endpoint
